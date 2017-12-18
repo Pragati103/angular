@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  
+
   goals:any;
 
   constructor(private route:ActivatedRoute,private router:Router,private _data:DataService) {
@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this._data.goal.subscribe(res=>this.goals=res);
   }
-senMeHome(){
+sendMeHome(){
   this.router.navigate([''])
 }
 }
