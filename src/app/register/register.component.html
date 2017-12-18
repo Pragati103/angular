@@ -1,0 +1,53 @@
+<div class="col-md-6 col-md-offset-3">
+	    <h2>Register</h2>
+	    <form name="form" ng-submit="vm.register()" role="form">
+	    <table style="border-collapse: separate; border-spacing: 10px;" >
+	    <tr>
+		<td>
+		 <label for="username">First name</label>
+		</td>
+		<td>
+		 <input type="text" name="firstName" id="firstName" class="txt" ng-model="vm.user.firstName" required />
+		</td>
+	    </tr>
+	    
+	    <tr>
+		<td>
+		<label for="username">Last name</label>
+		</td>
+		<td>
+		 <input type="text" name="lastName" id="Text1" class="txt" ng-model="vm.user.lastName" required />
+		</td>
+	    </tr>
+	     
+	    <tr>
+		<td>
+		  <label for="username">Username</label>
+		</td>
+		<td>
+		  <input type="text" name="username" id="username" class="txt" ng-model="vm.user.username" required />
+		</td>
+	    </tr>
+	     
+	    <tr>
+		<td>
+		<label for="password">Password</label>
+		</td>
+		<td>
+		    <input type="password" name="password" id="password" class="txt" ng-model="vm.user.password" required />
+		</td>
+	    </tr>
+
+	    <tr>
+		<td>
+		</td>
+		<td>
+		  <div class="form-actions">
+		    <button type="submit" class="btn">Register</button>
+		    <a href="login" class="btn btn-link">Cancel</a>
+		</div>
+		</td>
+	    </tr>
+	   </table>   
+	    </form>
+	</div>
